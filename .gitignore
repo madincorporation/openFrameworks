@@ -18,7 +18,7 @@ addons/*
 
 # rule to avoid non-official apps going into git
 # see apps/.gitignore
-apps/*
+# apps/*
 
 # rule to ignore compiled / downloaded libs
 /libs/*
@@ -148,7 +148,7 @@ Desktop.ini
 #########################
 
 .mailmap
-/apps*/
+# /apps*/
 projectGenerator*/
 .cxx/
 
@@ -170,3 +170,6 @@ libs/openFrameworksCompiled/project/vs2019/openframeworksLib.vcxproj.user
 scripts/templates/vs/bin/emptyExample_debug.exe
 scripts/templates/vs2019/emptyExample.vcxproj.user
 libs/openFrameworksCompiled/project/android/build-*/
+
+# Bazel
+bazel-*
