@@ -1,0 +1,13 @@
+load("@rules_cc//cc:cc_library.bzl", "cc_library")
+
+cc_library(
+    name = "of-lib",
+    hdrs = [
+        "ofMain.h"
+    ],
+    deps = [
+        "//libs/openFrameworks/utils:of-utils"
+    ],
+    includes = ["."],
+    visibility = ["//apps/bzlApps:__subpackages__"],
+)

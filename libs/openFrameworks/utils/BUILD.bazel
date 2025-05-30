@@ -1,0 +1,17 @@
+load("@rules_cc//cc:cc_library.bzl", "cc_library")
+
+cc_library(
+    name = "of-utils",
+    srcs = [
+        # "ofConstants.h"
+    ],
+    hdrs = [
+        "ofConstants.h"
+    ],
+    includes = ["."],
+    deps = [
+        "//libs/libtess2:libtess2",
+        # "//libs/glew:glew"
+    ],
+    visibility = ["//libs/openFrameworks:__subpackages__"],
+)

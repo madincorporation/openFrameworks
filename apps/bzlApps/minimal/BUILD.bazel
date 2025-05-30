@@ -4,5 +4,8 @@ cc_binary(
     name = "of-app-minimal",
     srcs = [
         "main.cpp"
+    ],
+    deps = [
+        "//libs/openFrameworks:of-lib",
     ]
 )

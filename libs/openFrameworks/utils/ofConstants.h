@@ -255,7 +255,7 @@ enum ofTargetPlatform{
 			#define __LINUX_ALSA__
 		#endif
 		#define __LINUX_OSS__
-		#include <GL/glew.h>
+		// #include <GL/glew.h>
 	#endif
 
 	// for some reason, this isn't defined at compile time,

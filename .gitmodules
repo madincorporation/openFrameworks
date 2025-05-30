@@ -5,3 +5,9 @@
 [submodule "scripts/apothecary"]
 	path = scripts/apothecary
 	url = https://github.com/openframeworks/apothecary
+[submodule "libs/libtess2"]
+	path = libs/libtess2
+	url = https://github.com/memononen/libtess2.git
+[submodule "libs/glew"]
+	path = libs/glew
+	url = https://github.com/nigels-com/glew.git
