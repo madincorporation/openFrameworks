@@ -1,0 +1,18 @@
+load("@rules_cc//cc:cc_binary.bzl", "cc_binary")
+
+cc_binary(
+    name = "opengl_plain_minimal",
+    srcs = ["opengl_plain_minimal.cpp"],
+    # copts = ["-ObjC++"],  # Required for macOS system OpenGL headers
+    linkopts = [
+        "-framework", "OpenGL",
+        # "-framework", "Cocoa",
+    ],
+)
+
+cc_binary(
+    name = "opengl_glfw_minimal",
+    srcs = ["opengl_glfw_minimal.cpp"],
+    deps = ["@glfw//:glfw"],
+    linkopts = ["-framework", "Cocoa", "-framework", "OpenGL", "-framework", "IOKit", "-framework", "CoreVideo"],
+)

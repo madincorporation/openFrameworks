@@ -1,0 +1,11 @@
+load("@rules_cc//cc:cc_binary.bzl", "cc_binary")
+
+cc_binary(
+    name = "test",
+    srcs = [
+        "main.cpp"
+    ],
+    deps = [
+        "//libs/openFrameworks:of-lib",
+    ]
+)

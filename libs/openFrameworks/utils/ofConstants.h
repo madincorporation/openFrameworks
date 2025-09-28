@@ -215,7 +215,7 @@ enum ofTargetPlatform{
 	#ifndef OF_NO_FMOD
 		#define OF_NO_FMOD
 	#endif
-	#include "GL/glew.h"
+	// #include "GL/glew.h"
     #include "OpenGL/OpenGL.h"
 
 	#if defined(__LITTLE_ENDIAN__)

@@ -1,0 +1,14 @@
+load("@rules_cc//cc:cc_binary.bzl", "cc_binary")
+
+cc_binary(
+    name = "vulkan_plain_minimal",
+    srcs = ["vulkan_plain_minimal.cpp"],
+    copts = [
+        "-std=c++17",
+        "-I/Users/michaelsalzer/VulkanSDK/1.4.313.1/macOS/include",
+    ],
+    linkopts = [
+        "-L/Users/michaelsalzer/VulkanSDK/1.4.313.1/macOS/lib",
+        "-lvulkan",
+    ],
+)
